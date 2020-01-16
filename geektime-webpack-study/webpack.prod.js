@@ -42,7 +42,15 @@ module.exports = {
           // 'style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'less-loader'
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer')
+              ]
+            }
+          },
+          'less-loader',
         ]
       }, {
         test: /\.(png|svg|jpe?g|gif)$/,
