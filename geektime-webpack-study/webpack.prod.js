@@ -51,6 +51,13 @@ module.exports = {
             }
           },
           'less-loader',
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 75,
+              remPrecision: 8,
+            }
+          }
         ]
       }, {
         test: /\.(png|svg|jpe?g|gif)$/,
