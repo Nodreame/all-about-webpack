@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
+const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default;
 
 module.exports = {
   entry: {
@@ -116,6 +117,7 @@ module.exports = {
         removeComments: false
       }
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new HTMLInlineCSSWebpackPlugin()
   ]
 };

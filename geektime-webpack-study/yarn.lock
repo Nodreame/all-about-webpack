@@ -3113,6 +3113,13 @@ html-entities@^1.2.1:
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
 
+html-inline-css-webpack-plugin@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/html-inline-css-webpack-plugin/-/html-inline-css-webpack-plugin-1.8.0.tgz#f1120e08755658148b53f5596824fc5afece58ac"
+  integrity sha512-lNBoRA2Sl1+0VCUevElT/In208AtkvDFAMZN8K9bBkZ9gn+Ymi8vRCrKkSIF4MNVxdDL2x0LOGyDscQ7So9zcQ==
+  dependencies:
+    lodash "^4.17.15"
+
 html-minifier@^3.2.3:
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.21.tgz#d0040e054730e354db008463593194015212d20c"
@@ -3859,7 +3866,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.3, lodash@^4.17.5:
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.5:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
