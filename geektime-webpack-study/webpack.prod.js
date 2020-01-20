@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default;
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
+const webpack = require('webpack');
 
 const setMPA = () => {
   const entry = {};
@@ -120,7 +121,7 @@ module.exports = {
       }
     ]
   },
-  mode: 'production',
+  mode: 'none',
   plugins: htmlWebpackPlugins.concat([
     new MiniCssExtractPlugin({
       filename: '[name]_[contenthash:8].css'
@@ -144,7 +145,8 @@ module.exports = {
           global: 'ReactDOM'
         }
       ]
-    })
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin()
   ]),
   optimization: {
     splitChunks: {

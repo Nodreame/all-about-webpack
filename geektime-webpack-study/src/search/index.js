@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './search.less';
 import pic from './img/leetcode-process.png';
 import logo from './img/babel.svg';
-import { common } from '../../common';
+// import { common } from '../../common';
 
 class Search extends React.Component {
   render() {
